@@ -30,3 +30,5 @@ Clone this repo, then:
     cd arc-typescript
     npm install
     npm start
+
+Then, local up http://localhost:3333.
