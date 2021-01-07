@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && npm run copy-cfg",
     "clean": "rm -rf dist",
+    "copy-cfg": "find src -name '*.arc' | cpio -pdm --quiet dist && cp -rf dist/src/* dist/. && rm -rf dist/src",
     "watch": "tsc -w",
     "serve": "arc sandbox",
     "start": "npm run build && concurrently npm:watch npm:serve",
