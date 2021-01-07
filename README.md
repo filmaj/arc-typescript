@@ -1,6 +1,6 @@
 # arc-typescript
 
-> Example arc.codes app using typescript
+> Example [arc.codes](https://arc.codes) app using typescript
 
 ## Overview
 
@@ -10,7 +10,7 @@ This repo takes massive inspiration from Mike MacCana's excellent
 
 This app's makeup is defined in the `app.arc` file. It contains a single HTTP
 GET route to the root (`/`). The code for this is located under
-`src/http/get-index` - same as in any standard arc.codes app.
+`src/http/get-index` - same as in any standard [arc.codes](https://arc.codes) app.
 
 Because we use TypeScript, a build step is necessary (debatable, but for
 purposes of this example, let's assume that is true). The tooling and building
