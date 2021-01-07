@@ -1,0 +1,25 @@
+{
+  "name": "arc-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "watch": "tsc -w",
+    "serve": "arc sandbox",
+    "start": "npm run build && concurrently npm:watch npm:serve",
+    "deploy:staging": "npm run build && arc deploy",
+    "deploy:production": "npm run build && arc deploy production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@architect/architect": "^8.4.4",
+    "@architect/functions": "^3.13.8",
+    "concurrently": "^5.3.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3"
+  }
+}
