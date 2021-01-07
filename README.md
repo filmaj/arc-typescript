@@ -14,7 +14,12 @@ GET route to the root (`/`). The code for this is located under
 
 Because we use TypeScript, a build step is necessary (debatable, but for
 purposes of this example, let's assume that is true). The tooling and building
-is all handled using `npm run` scripts. For details on the build scripts, check out the `scripts`
+is all handled using `npm run` scripts. In short, we configure TypeScript to
+compile all `*.ts` files located under `src/` into `.js` files under the `dist/`
+directory. Finally, we tell arc to look for code under the `dist/` directory
+(see the `app.arc` file's `@http` section for details).
+
+For details on the build scripts, check out the `scripts`
 section of the `package.json` file. For details on the TypeScript compilation
 options, check out the `tsconfig.json`.
 
